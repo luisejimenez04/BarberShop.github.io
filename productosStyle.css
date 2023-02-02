@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #BBBBBB;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 28px;
+    transition: 0.3s ease-out;
+}
+nav a:hover{
+   color: orangered;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+.logo-menu{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.productos{
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 50px;
+  
+}
+main li{
+    display: inline-block;
+    margin: 0 1.5%;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    padding-top: 15px;
+    padding: 30px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+main li:hover{
+    border-color: orange;
+}
+main li:hover h2{
+    font-size: 30px;
+}
+main li:active{
+    border-color: orangered;
+}
+.descripcion{
+    font-size: 16px;
+    
+}
+.precio{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+footer{
+    text-align: center;
+    color: white;
+    background-image: url(img/bg.jpg);
+    margin-top: 85px;
+    padding: 20px;
+}
+@media screen and (max-width:480px){
+    .logo-menu, .productos{
+        width: auto;
+    }
+    .productos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .productos li{
+        margin-top: 2em;
+        width: 280px;
+    }
+    .logo-menu{
+    text-align: center;
+    }
+    header nav{
+        position: static;
+        padding: 0 0 10px 0;
+    }
+    header nav a{
+        font-size: 20px;
+    }
+}
